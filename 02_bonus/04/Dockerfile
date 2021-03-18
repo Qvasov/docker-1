@@ -1,6 +1,6 @@
-FROM debian:stretch-slim
+FROM debian
 RUN apt-get update && apt-get upgrade -y
-RUN apt-get install -y build-essential git vim
+RUN apt-get install bastet -y
+CMD ["./usr/games/bastet"]
 
-# C
 # docker build -t bonus4 . && docker run --rm -it bonus4
