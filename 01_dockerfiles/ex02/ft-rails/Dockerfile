@@ -9,4 +9,6 @@ ONBUILD RUN bundle install
 ONBUILD RUN rails webpacker:install
 ONBUILD RUN rake db:migrate && rake db:seed
 
+# https://disk.yandex.ru/d/zWIS9XWC9UUDQQ
+# tar -xvf my_app.tar.gz
 # docker build -t ft-rails:on-build .
