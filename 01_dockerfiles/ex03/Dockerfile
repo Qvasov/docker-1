@@ -1,6 +1,7 @@
-FROM debian:stretch-slim
+FROM debian
 
-RUN apt-get update && apt-get dist-upgrade -y && \
+RUN apt-get update -y && apt-get upgrade -y
+RUN apt-get dist-upgrade -y && \
     apt-get install -y curl openssh-server ca-certificates apt-utils
 RUN curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | bash
 RUN apt-get install -y gitlab-ce
