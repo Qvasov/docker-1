@@ -1,0 +1,2 @@
+# https://habr.com/ru/post/149694/
+docker service create --name orbital-command -e RABBITMQ_DEFAULT_USER=dbennie -e RABBITMQ_DEFAULT_PASS=zerg --network overmind rabbitmq
